@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+/* navegador */
+nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+/* menu de navegacion */
+nav ul li {
+    display: flex;
+    justify-content: end;
+
+}
+
+header,
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+/* contenido */
+.content {
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.content article {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* imagenes */
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+
+}
+
+/* listado de proteinas */
+.listado {
+    text-align: left;
+}
+/* inicio */
+.index {
+    text-align: right;
+}
+/* mobile */
+@media (max-width: 768px) 
+     nav ul {
+        flex-direction: column;
+        /* Alinea los enlaces en columna */
+        align-items:center;
+    }
+
+    nav ul li {
+        margin-bottom: 1em;
+    }
+ 
